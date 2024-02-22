@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+/* navbar */
+header {
+    background-color: #E4DEBE;
+}
+
+
+#logo {
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Acceuil */
+
+.acc {
+    height: 80vh;
+
+}
+
+.accu {
+    height: 92vh;
+    background-image: linear-gradient(to bottom, #A94438, #D24545, #E6BAA3);
+}
+
+@keyframes objectAnimation {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+
+    100% {
+        transform: translateY(-200px) scale(0.5);
+    }
+}
+
+.imm {
+    max-width: 100%;
+}
+
+.pasti .shd {
+    width: 100%;
+    /* Assure que l'image elle-même s'ajuste à la largeur du conteneur */
+    height: auto;
+    /* Préserve la proportion de l'image */
+    display: block;
+    /* Évite les marges indésirables causées par les images en ligne */
+}
+
+
+/* Animation ombre */
+
+@keyframes shadowAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+.shd {
+    transform-origin: center bottom;
+    animation: shadowAnimation 3s infinite alternate;
+    /* Répète l'animation en boucle */
+    position: relative;
+    bottom: 0px;
+    left: 190px;
+
+}
+
+/* Animation objet */
+@keyframes objectAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(40px);
+        /* Déplace l'objet vers le bas */
+    }
+}
+
+.pasti {
+
+    animation: objectAnimation 3s infinite alternate;
+    /* Répète l'animation en boucle */
+    position: relative;
+    left: 200px;
+    bottom: 50px;
+}
+
+.mystique {
+    font-family: "Dancing Script", cursive;
+    font-weight: 600;
+}
+
+.pacc {
+    font-family: "Dancing Script", cursive;
+    font-weight: 600;
+    font-size: 30px;
+    color: #E4DEBE;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .pasti {
+        left: 0;
+
+    }
+
+
+    .shd {
+        left: 0;
+
+        bottom: 180px;
+    }
+}
+
+
+/* Nos produits */
+
+.produits>h1 {
+    padding: 40px;
+    text-align: center;
+}
+
+.tit {
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+}
+
+.produits {
+    background-color: #E4DEBE;
+}
+
+.card {
+    background-color: #D24545;
+}
+
+.card p {
+    font-family: "Dancing Script", cursive;
+    font-weight: 500;
+    color: #E4DEBE;
+}
+
+.card-body span {
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+}
+
+/* footer */
+footer {
+    background-color: #A94438;
+    margin-top: 40px;
+}
+
+footer>p {
+    color: #E4DEBE;
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
